@@ -1,0 +1,85 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": "Postgres",
+        "gridPos": {
+          "h": 8,
+          "w": 10,
+          "x": 7,
+          "y": 0
+        },
+        "id": 4,
+        "options": {
+          "bgColor": "transparent",
+          "clockType": "custom",
+          "countdownSettings": {
+            "endCountdownTime": "2023-11-17T06:41:51+01:00",
+            "endText": "00:00:00"
+          },
+          "countupSettings": {
+            "beginCountupTime": "2023-11-17T06:41:51+01:00",
+            "beginText": "00:00:00"
+          },
+          "dateSettings": {
+            "dateFormat": "YYYY-MM-DD",
+            "fontSize": "48px",
+            "fontWeight": "normal",
+            "locale": "",
+            "showDate": true
+          },
+          "fontMono": false,
+          "mode": "time",
+          "refresh": "sec",
+          "timeSettings": {
+            "fontSize": "48px",
+            "fontWeight": "bold"
+          },
+          "timezone": "",
+          "timezoneSettings": {
+            "fontSize": "30px",
+            "fontWeight": "normal",
+            "showTimezone": true,
+            "zoneFormat": "nameOffset"
+          }
+        },
+        "pluginVersion": "2.1.3",
+        "type": "grafana-clock-panel"
+      }
+    ],
+    "refresh": "",
+    "schemaVersion": 39,
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "clock-dashboard",
+    "version": 1,
+    "weekStart": ""
+  }
