@@ -18,7 +18,7 @@ regex: {code="([^"]+)"\}|
 
 ### 6 - Grafana Cloud
 
-- Grafana Agent
+Grafana Agent<br/>
 Simplify deployment and management of your telemetry data with the Grafana Agent, a lightweight collector for sending metrics, logs, and traces to Grafana Cloud.
 
 ### 7 - AMG - Amazon Managed Grafana
