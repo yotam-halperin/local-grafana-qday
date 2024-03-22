@@ -25,3 +25,82 @@ Simplify deployment and management of your telemetry data with the Grafana Agent
 - Users
 - AWS integration
 - Billing
+
+
+curl -X POST --insecure -H "Content-Type: application/json" -d "{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Visualize AWS X-Ray metrics",
+  "editable": false,
+  "fiscalYearStartMonth": 0,
+  "gnetId": 15016,
+  "graphTooltip": 0,
+  "links": [],
+  "liveNow": false,
+  "timezone": "browser",
+  "title": "AWS X-Ray",
+  "uid": "awsxrayaa",
+  "version": 1,
+  "weekStart": ""
+}" --location http://localhost:3001/api/dashboards/import --user 'admin:admin'
+
+
+
+
+
+curl -X POST --insecure -H "Content-Type: application/json" -d '{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Visualize AWS X-Ray metrics",
+  "editable": false,
+  "gnetId": 15016,
+  "graphTooltip": 0,
+  "liveNow": false,
+  "timezone": "browser",
+  "title": "AWS X-Ray",
+  "uid": "awsxrayaa",
+  "version": 1,
+  "weekStart": ""
+}' --location http://localhost:3001/api/dashboards/import --user 'admin:admin'
+
+  
