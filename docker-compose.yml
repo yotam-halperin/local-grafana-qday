@@ -9,7 +9,8 @@ services:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
   grafana-wrong:
-    image: public.ecr.aws/f5g2i5c5/grafana-qday
+    # image: public.ecr.aws/f5g2i5c5/grafana-qday
+    build: ./grafana-wrong
     ports:
       - '3000:3000'
 
